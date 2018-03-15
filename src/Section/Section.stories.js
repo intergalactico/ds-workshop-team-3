@@ -15,14 +15,30 @@ import { withInfo } from '@storybook/addon-info';
  */
 import Section, {SectionHeader, SectionText} from '.';
 
+import examplebg from '../../assets/dsconf-wide.jpg';
+
 storiesOf('Section', module) // eslint-disable-line no-undef
   .add('index',
     withInfo(`
  Section component provides a container with paddings.
     `)(() => (
-      <Section>
-        <SectionHeader>Test</SectionHeader>
-        <SectionText>Text inside the section (with typography).</SectionText>
-        <p>Text inside the section (without typography).</p>
-      </Section>
+      <div>
+        <Section>
+          <SectionHeader>Test</SectionHeader>
+          <SectionText>Text inside the section (with typography).</SectionText>
+          <p>Text inside the section (without typography).</p>
+        </Section>
+
+        <Section isInverted>
+          <SectionHeader>Inverted Section</SectionHeader>
+          <SectionText>Text inside the section (with typography).</SectionText>
+          <p>Text inside the section (without typography).</p>
+        </Section>
+
+        <Section isInverted bg={examplebg}>
+          <SectionHeader>Inverted Section with Background</SectionHeader>
+          <SectionText>Text inside the section (with typography).</SectionText>
+          <p>Text inside the section (without typography).</p>
+        </Section>
+      </div>
   )));
