@@ -5,6 +5,8 @@
 
 import React from 'react'
 import ReactDOM from 'react-dom'
+import Hero from '../src/Hero';
+import heroImage from '../assets/dsconf-wide.jpg';
 
 import { Icon, Section, SectionHeader, SectionText } from '../lib/my-awesome-library'
 
@@ -13,8 +15,7 @@ const st = Section.SectionTypography
 const Home = () => {
   return (
     <div>
-      
-
+        <Hero heroImage = {heroImage} />
       <div>
         <Icon name='star' color='#000' isInverted size='0.785rem' />
         <Icon name='star' color='#888888' isInverted />
