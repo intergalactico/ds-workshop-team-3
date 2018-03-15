@@ -9,7 +9,10 @@ import heroImage from '../../assets/dsconf-wide.jpg';
 import heroLogo from '../../assets/dsconf-logo.png';
 
 storiesOf('Hero', module)
-  .add('index', () => (
+  .add('index',
+    withInfo(`
+ Section component provides a container with paddings.
+    `)(() => (
     <Hero heroImage = {heroImage}>
       <p><img src={heroLogo} className="hero-logo"/></p>
       <HeroHeader isInverted>A DESIGN SYSTEMS CONFERENCE</HeroHeader>
@@ -18,4 +21,4 @@ storiesOf('Hero', module)
         IN HELSINKI, FINLAND
       </HeroText>
     </Hero>
-  ))
+  )));
