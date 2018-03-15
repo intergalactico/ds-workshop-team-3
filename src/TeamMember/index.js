@@ -52,7 +52,7 @@ const TeamMember = (props) => {
     <s.TeamMember>
       <img src={avatar} width="200" />
       <ts.Header2>{name}</ts.Header2>
-      TODO: show title
+      <ts.Header3>{title}</ts.Header3>
       {socialList}
     </s.TeamMember>
   );
