@@ -5,6 +5,7 @@
 
 import styled, { css } from 'styled-components';
 import { isCircular } from 'styled-utils';
+import colors from '../Colors/colorset.js';
 
 /*
  * In styled-components, you can define functions that output
@@ -21,6 +22,14 @@ const isIcon = ({ isIcon }) => {
   `;
 };
 
+const isInverted = ({ isInverted }) => {
+  if (!isInverted) return;
+  return css`
+    color: ${colors.white};
+    border-color: ${colors.white};
+  `;
+};
+
 /* Default styles for all the buttons */
 export const Button = styled.div`
   font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
@@ -29,19 +38,20 @@ export const Button = styled.div`
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  text-transform: uppercase;
   padding: 0px 1.0em;
   cursor: pointer;
   outline: none;
-  border: 1px solid;
-  border-color: transparent;
+  border: 2px solid;
+  border-color: ${colors.brandDark};
   border-radius: 3px;
   box-sizing: border-box;
   line-height: 1.5;
   position: relative;
   user-select: none;
   text-decoration: none;
-  background-color: ${p => p.color};
-  color: ${p => p.textColor};
+  background-color: transparent;
+  color: ${colors.brandDark};
   font-size: ${p => p.size ? p.size : '1rem'};
   &:not(:last-child) {
     margin: 0 0.25em 0 0;
@@ -52,6 +62,7 @@ export const Button = styled.div`
     font-size: ${p => p.size ? p.size : '1rem'};
   }
   ${isIcon}
+  ${isInverted}
   ${isCircular}
 `;
 

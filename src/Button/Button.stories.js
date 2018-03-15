@@ -27,6 +27,9 @@ storiesOf('Button', module) // eslint-disable-line no-undef
           <Box>
             <Button onClick={function(){ alert('You clicked!'); }}>I am just a button</Button>
           </Box>
+          <Box color="#333333">
+            <Button isInverted onClick={function(){ alert('You clicked!'); }}>I am inverted button</Button>
+          </Box>
           <Box>
             <Button color='#1b8ceb' textColor="#fff" href="http://sc5.io">I am a link button</Button>
             <Button color='#1b8ceb' textColor="#fff" disabled href="http://sc5.io">Disabled button with link</Button>
