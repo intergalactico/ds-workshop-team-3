@@ -25,6 +25,7 @@ storiesOf('TeamMember', module) // eslint-disable-line no-undef
       <TeamMember
         name="Donald Duck"
         title="Director of Everything"
+
         social={{
           twitter: 'donaldducknl',
           linkedin: 'https://www.linkedin.com/company/the-walt-disney-company/'
