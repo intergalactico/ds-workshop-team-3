@@ -26,19 +26,16 @@ storiesOf('Section', module) // eslint-disable-line no-undef
         <Section>
           <SectionHeader>Test</SectionHeader>
           <SectionText>Text inside the section (with typography).</SectionText>
-          <p>Text inside the section (without typography).</p>
         </Section>
 
         <Section isInverted>
-          <SectionHeader>Inverted Section</SectionHeader>
-          <SectionText>Text inside the section (with typography).</SectionText>
-          <p>Text inside the section (without typography).</p>
+          <SectionHeader isInverted>Inverted Section</SectionHeader>
+          <SectionText isInverted>Text inside the section (with typography).</SectionText>
         </Section>
 
         <Section isInverted bg={examplebg}>
-          <SectionHeader>Inverted Section with Background</SectionHeader>
-          <SectionText>Text inside the section (with typography).</SectionText>
-          <p>Text inside the section (without typography).</p>
+          <SectionHeader isInverted>Inverted Section with Background</SectionHeader>
+          <SectionText isInverted>Text inside the section (with typography).</SectionText>
         </Section>
       </div>
   )));

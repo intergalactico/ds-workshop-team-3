@@ -39,8 +39,9 @@ export default Section;
  * used as wrappers for texts and headers. Check out the story (documentation) to see how
  * these wrappers are used.
  */
-const SectionHeader = ({ children }) => {
-  return (<ts.Header1>{children}</ts.Header1>);
+const SectionHeader = ({ children, ...props }) => {
+  const { isInverted } = props;
+  return (<ts.Header1 isInverted={isInverted}>{children}</ts.Header1>);
 };
 
 SectionHeader.propTypes = {
@@ -50,8 +51,9 @@ SectionHeader.propTypes = {
 export { SectionHeader };
 
 
-const SectionText = ({ children }) => {
-  return (<ts.P>{children}</ts.P>);
+const SectionText = ({ children, ...props }) => {
+  const { isInverted } = props;
+  return (<ts.P isInverted={isInverted}>{children}</ts.P>);
 };
 
 SectionText.propTypes = {

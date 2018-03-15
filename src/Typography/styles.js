@@ -1,4 +1,4 @@
-import styled, { injectGlobal } from 'styled-components';
+import styled, { css, injectGlobal } from 'styled-components';
 
 /*
  * The feature of styled components is that they encapsulate the
@@ -55,6 +55,15 @@ injectGlobal`
   }
 `;
 
+const isInverted = ({ isInverted }) => {
+  if (!isInverted) return css`
+    color: ${colors.dark};
+  `;
+  return css`
+    color: ${colors.white};
+  `;
+};
+
 /*
  * The styles below use the color from th set.
  */
@@ -67,6 +76,7 @@ import colors from '../Colors/colorset';
 
 export const Header1 = styled.h1`
   font-family: futura-pt-bold;
+  font-size: 51px;
 `;
 
 export const Header2 = styled.h2`
@@ -87,7 +97,8 @@ export const Header3 = styled.h3`
 
 export const P = styled.p`
   font-family: lato;
-  color: ${colors.dark};
+  font-size: 20px;
+  ${isInverted}
 `;
 
 /*

@@ -9,7 +9,7 @@ const heroBackground  = ({ heroBackground }) => {
 }
 
 export const Hero = styled.div`
-  color: red;
+  color: #ffffff;
   height: 25em;
   ${heroBackground}
 `;
