@@ -3,6 +3,7 @@ export default {
   offWhite: '#f8fefe',
   dark: '#353740',
   grey: '#747d88',
-  brandDark: '#01092F',
+  brandDark: '#42A9DE',
+  brandDark2: '#EC6F73',
   brandLight: '#79C8AF'
 };

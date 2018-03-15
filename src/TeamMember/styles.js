@@ -11,6 +11,10 @@ import colors from '../Colors/colorset';
 
 export const TeamMember = styled.div`
   text-align: center;
+
+  img {
+    border-radius: 100%;
+  }
 `;
 
 /*
@@ -32,7 +36,7 @@ export const IconList = styled.ul`
   margin: 0;
   margin-top: 20px;
   padding: 0;
-  list-style: none;
+  list-style: none; 
 `;
 
 export const IconListItem = styled.li`

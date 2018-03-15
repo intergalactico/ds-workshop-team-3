@@ -4,8 +4,9 @@ import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info';
 
 import Hero, {HeroText, HeroHeader} from '.';
+import Button from '../Button';
 
-import heroImage from '../../assets/dsconf-wide.jpg';
+import heroImage from '../../assets/dsconf-wide.png';
 import heroLogo from '../../assets/dsconf-logo.png';
 
 storiesOf('Hero', module)
@@ -15,10 +16,11 @@ storiesOf('Hero', module)
     `)(() => (
     <Hero heroImage = {heroImage}>
       <p><img src={heroLogo} className="hero-logo"/></p>
-      <HeroHeader isInverted>A DESIGN SYSTEMS CONFERENCE</HeroHeader>
-      <HeroText isInverted>
-        MARCH 14th – 15th, 2018<br/>
-        IN HELSINKI, FINLAND
+      <HeroHeader>A design systems conference</HeroHeader>
+      <HeroText>
+        March 14th – 15th, 2019<br/>
+        in Paris, France
       </HeroText>
+      <Button>Purchase tickets</Button>
     </Hero>
   )));

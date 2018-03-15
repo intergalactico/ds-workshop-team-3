@@ -14,7 +14,7 @@ import { withInfo } from '@storybook/addon-info';
 
 import TeamMember from '.';
 
-import avatar from '../../assets/avatar.jpg';
+import avatar from '../../assets/0-1.jpg';
 
 storiesOf('TeamMember', module) // eslint-disable-line no-undef
   .add('index',

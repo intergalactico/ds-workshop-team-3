@@ -27,31 +27,32 @@ const isInverted = ({ isInverted }) => {
   return css`
     color: ${colors.white};
     border-color: ${colors.white};
+    background-color: transparent;
   `;
 };
 
 /* Default styles for all the buttons */
 export const Button = styled.div`
-  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
   height: 2.40em;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
-  padding: 0px 1.0em;
+  padding: 0.8em 2.0em;
   cursor: pointer;
   outline: none;
   border: 2px solid;
-  border-color: ${colors.brandDark};
-  border-radius: 3px;
+  border-color: ${colors.brandDark2};
+  border-radius: 40px;
   box-sizing: border-box;
-  line-height: 1.5;
+  line-height: .5;
   position: relative;
   user-select: none;
   text-decoration: none;
-  background-color: transparent;
-  color: ${colors.brandDark};
+  background-color: ${colors.brandDark2};
+  color: ${colors.white};
   font-size: ${p => p.size ? p.size : '1rem'};
   &:not(:last-child) {
     margin: 0 0.25em 0 0;
