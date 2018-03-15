@@ -11,7 +11,7 @@ import heroLogo from '../../assets/dsconf-logo.png';
 storiesOf('Hero', module)
   .add('index',
     withInfo(`
- Section component provides a container with paddings.
+ Hero component provides a heroImage.
     `)(() => (
     <Hero heroImage = {heroImage}>
       <p><img src={heroLogo} className="hero-logo"/></p>

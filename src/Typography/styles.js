@@ -101,6 +101,12 @@ export const P = styled.p`
   ${isInverted}
 `;
 
+export const smallText = styled.span`
+  font-family: lato;
+  font-size: 16px;
+  ${isInverted}
+`;
+
 /*
  * In ordder to show in the story (documentation) what are the available
  * fonts, this component provides styles for each font. They are not

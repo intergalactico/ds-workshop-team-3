@@ -29,10 +29,11 @@ export const Section = styled.section`
   padding-bottom: 100px;
   padding-left: 0;
   .section__inner {
+    max-width: 650px;
     padding-top: 50px;
-    padding-right: 35px;
+    margin-right: auto;
     padding-bottom: 50px;
-    padding-left: 35px;
+    margin-left: auto;
   }
 
   ${isInverted}
