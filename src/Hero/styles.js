@@ -9,7 +9,14 @@ const heroBackground  = ({ heroBackground }) => {
 }
 
 export const Hero = styled.div`
+  padding-top: 10em;
+  padding-bottom: 10em;
   color: #ffffff;
-  height: 25em;
+  min-height: 25em;
+  text-align: center;
   ${heroBackground}
+
+  .hero-logo {
+    height: 200px;
+  }
 `;
