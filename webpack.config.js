@@ -54,7 +54,7 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: ['eslint-loader']
+        use: []
       },
       {
         test: /\.(jpe?g|png|gif|svg)$/i,
