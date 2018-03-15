@@ -13,6 +13,8 @@ const st = Section.SectionTypography
 const Home = () => {
   return (
     <div>
+      
+
       <div>
         <Icon name='star' color='#000' isInverted size='0.785rem' />
         <Icon name='star' color='#888888' isInverted />

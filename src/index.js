@@ -19,6 +19,6 @@ export {
   Section,
   SectionHeader,
   SectionText,
-  Typography
+  Typography,
   Hero
 };

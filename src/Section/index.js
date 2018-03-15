@@ -3,7 +3,7 @@
  */
 import React from 'react';
 import * as s from './styles';
-import { node, arrayOf, oneOfType } from 'prop-types';
+import { node, arrayOf, oneOfType, string, bool } from 'prop-types';
 
 
 /*
@@ -27,7 +27,9 @@ const Section = ({ children, ...props }) => {
 };
 
 Section.propTypes = {
-  children: oneOfType([arrayOf(node), node])
+  children: oneOfType([arrayOf(node), node]),
+  bg: string,
+  isInverted: bool
 };
 
 export default Section;
